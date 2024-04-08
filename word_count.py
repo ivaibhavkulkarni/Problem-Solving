@@ -1,12 +1,11 @@
-def print_frequncy(line):
-    line = line.lower()
-    set_of_char = set(line)
-    set_of_char.discard(" ")
-    set_of_char = sorted(set_of_char)
-    for i in set_of_char:
-        msg = "{}: {}"
-        #print(line.count(i))
-        print(msg.format(i,line.count(i)))
+words = input().split()
+sorted_words = sorted(words)
 
-line = input()
-print_frequncy(line)
+final = {}
+for i in sorted_words:
+    count = words.count(i)
+    final[i] = count
+
+for j in final:    
+    mes = "{}: {}"
+    print(mes.format(j,final[j]))
