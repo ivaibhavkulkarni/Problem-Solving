@@ -1,6 +1,8 @@
 def no_of_rotations(a,b):
     if len(a) != len(b):
         return "No Match"
+    elif a == b:
+        return "None"
     else:
         len_a = len(a)
         for i in range(len_a):
