@@ -1,14 +1,12 @@
-n = 3
-flat_list = [1, 2, 3, 5, 10, 11, 15, 20, 30]
+string = input()
 
-nested = []
-for item in range(0,len(flat_list),n):
-    row = flat_list[item:item+n]
-    nested.append(row)
-print(nested)
+sum_a = 0
+n = 0
+for i in string:
+    if i.isdigit():
+        sum_a += int(i)
+        n += 1
+        average = sum_a / n
 
-for i in nested:
-    row = ""
-    for item in i:
-        row+= str(item) + " "
-    print(row)
+print(sum_a)
+print(round(average,2))
