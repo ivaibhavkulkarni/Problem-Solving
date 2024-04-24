@@ -38,6 +38,8 @@ class GroceryItems(Product):
 
     def get_expiry_date(self):
         return "Expiry date: {}".format(self.expiry_date)
+     
+
 
 ##### WAY 1 
 e = ElectronicItems("Laptop",30000,25000,5)
